@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: the time it took to sort the reversed50000.txt file was way longer then the time it took to sort the sorted50000.txt file. This is only the case with bubble sort, because there the worst scenario takes wayy longer (n-->n^2)
+
+sort2 uses: Merge Sort
+
+How do you know?: both the reversed.txt file and the sorted.txt file take about 1sec to be sorted, so its the same time which is only the case with selection and merge sort. Because it only takes 1sec (and sort3 takes a lot longer), it has to be merge sort (time=nlogn)
+
+sort3 uses: Selection Sort
+
+How do you know?: both the reversed.txt file and the sorted.txt file take about 3sec to be sorted, so its the same time which is only the case with selection and merge sort. Because it takes more time to sort then sort2, it has to be selection sort (time=n^2)

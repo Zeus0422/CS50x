@@ -1,0 +1,3 @@
+the audio would be characterized by the average energy, valence, and danceability of those songs.
+
+you could increase the sample size ore the time that a person lisend to the song
