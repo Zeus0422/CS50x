@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>
+                    who is called the king of gods in the greek mythology?
+                </h3>
+                <button onclick="changeColor(this, 'red')">Thor</button>
+                <button onclick="changeColor(this, 'red')">Posidon</button>
+                <button onclick="changeColor(this, 'green')">Zeus</button>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>
+                    Why do you think I piked Zeus as a username?
+                </h3>
+                <label for="userInput"></label>
+                <textarea id="userInput"></textarea>
+
+                <button onclick="checkAnswer()">Check Answer</button>
+            </div>
+        </div>
+
+        <script>
+            function changeColor(button, color){
+                button.style.backgroundColor = color;
+            }
+
+            function checkAnswer() {
+                var userInput = document.getElementById("userInput").value;
+
+                if (userInput.toLowerCase() === "because it was his favorite weapon in a video game") {
+                    document.getElementById("userInput").style.color = 'green';
+                    alert("Correct answer");
+
+                } else {
+                    document.getElementById("userInput").style.color = 'red';
+                    alert("Incorrect answer");
+
+                }
+            }
+        </script>
+    </body>
+</html>
